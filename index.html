@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width initial-scale=1.0" />
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Devante Kwizera" />
     <meta name="keywords" content="Devante,Kwizera,Portfolio,kdevante" />
     <title>Devante Kwizera</title>
@@ -10,7 +10,12 @@
     <link rel="stylesheet" href="portfolio.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Ubuntu|Lora"
+      href="https://fonts.googleapis.com/css?family=Inter|Typeface"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise"
+      rel="stylesheet"
+      type="text/css"
     />
     <link
       rel="stylesheet"
@@ -18,31 +23,65 @@
     />
   </head>
   <body>
-    <nav>
-      <a href="#About">About</a>
-      <a href="#Experience">Experience</a>
-      <a href="#Projects">Projects</a>
-      <a href="#Contact">Contact Me</a>
-    </nav>
+    <header>
+      <div class="logo">
+        <h1 style="margin: 0px; font-size: 30px">Devante Kwizera</h1>
+        <h3 style="margin: 10px 0px 0px 0px; font-size: medium">
+          Software Engineering Major
+        </h3>
+        <a class="link" href="https://www.ucalgary.ca/" target="_blank"
+          >University Of Calgary</a
+        >
+        <nav class="nav">
+          <a href="#About">About</a>
+          <a href="#Experience">Experience</a>
+          <a href="#Projects">Projects</a>
+        </nav>
+      </div>
+      <ul>
+        <li><a href="#" target="_blank" class="fa fa-github"></a></li>
+        <li>
+          <a
+            href="mailto:someone@example.com"
+            target="_blank"
+            class="fa fa-envelope"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/devantekwizera"
+            target="_blank"
+            class="fa fa-linkedin"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/devantekwizera"
+            target="_blank"
+            class="fa fa-instagram"
+          ></a>
+        </li>
+      </ul>
+    </header>
     <main>
       <section id="About">
-        <h1>
-          <a
-            href=""
-            class="typewrite"
-            data-period="2000"
-            data-type='[ "Hi, Im Devante.", "I am a Software Engineering Major.", "I Love Design.", "I Love to Develop." ]'
-          >
-            <span class="wrap"></span>
-          </a>
-        </h1>
+        <div id="typedtext"></div>
       </section>
-      <section id="Experience"></section>
-      <section id="Projects">
-        <h2>Coming Soon</h2>
-      </section>
-      <section id="Contact">
-        <h3>Reach me Here</h3>
+      <section id="Experience">
+        <h2>Work Experience</h2>
+        <article class="work">
+          <h5 class="time">July 2024 - Present</h5>
+          <div class="exp">
+            <h3>Software Engineering Fellow</h3>
+            <a href="https://headstarter.co/">HeadStarter AI</a>
+            <p class="summary">
+              Attended a 7 week program that consisted of building 5 AI
+              projects, 5 weekend hackathons, 1 final project with 1000+ users,
+              interview prep, resume reviews and feedback from real software
+              engineers.
+            </p>
+          </div>
+        </article>
       </section>
     </main>
   </body>
