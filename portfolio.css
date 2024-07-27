@@ -7,10 +7,12 @@ body {
   font-weight: 300;
   color:aliceblue;
   min-height: 100vh;
-  background: linear-gradient(-45deg, #141a29, #030404, #1b1e5b, #000000);
+  background: linear-gradient(-45deg, #2f617c, #03121c, #1c0509, #000000);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   max-width: fit-content;
+  position: static;
+  top: 0px;
 }
 @keyframes gradient {
     0% {
@@ -27,16 +29,17 @@ header{
     display: flex;
     flex-direction: column;
     padding: 90px 0px 90px 0px;
-    height: 100vh;
+    height: 80vh;
     width: 100%;  
-    overflow-y: visible;
+    position: sticky;
+    top: 0px;
 }
 .link{
     text-decoration: none;
     color: #8892b0;
 }
 .link:hover{
-    color: hsl(216, 100%, 82%);
+    color: white;
 }
 .nav {
     display: flex;
@@ -101,13 +104,23 @@ header{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     transition: background 0.3s ease;
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
+  .card {
+    padding: 10px;
+    box-shadow: 0 0 5px 0 ;
+    background: inherit;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
   main{
-    overflow-y: scroll;
+    overflow-y: visible;
     scroll-snap-type: mandatory;
+    padding: 0px 0px 0px 40px;
   }
   @media (max-width: 1020px){
     body{
@@ -119,6 +132,10 @@ header{
         padding: 24px 0px 24px 0px;
         margin-bottom: 20px ;
         height: auto;
+        position: relative;
+    }
+    main{
+      padding: 0px 0px 0px 0px;
     }
     .nav{
         display: none;
