@@ -109,17 +109,18 @@ header{
     transition: background 0.3s ease;
     padding-top: 90px;
     padding-bottom: 90px;
+    scroll-snap-align: start;
   }
   .card {
     padding: 10px;
     box-shadow: 0 0 5px 0 ;
     background: inherit;
     backdrop-filter: blur(10px);
-    border-radius: 10px;
+    border-radius: 15px;
 }
   main{
     overflow-y: visible;
-    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
     padding: 0px 0px 0px 40px;
   }
   @media (max-width: 1020px){
